@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trivia</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Our CSS style sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="display">00:00</div>
+
+        <!-- Div containing our stopwatch controls -->
+        <div id="buttons">
+            <button id="start">Start</button>
+            <!--             <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+            <button id="lap">Lap</button> -->
+        </div>
+
+        <div id="laps">
+            <div id="questions" class="panel panel-primary">
+                <!-- Default panel contents -->
+                <div class="panel-heading">CAR TRIVIA GAME</div>
+                <div id="triviaquestion" class="panel-body">
+                    <p>...</p>
+                </div>
+
+                <!-- List group -->
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <button type="button" id="0" class="btn btn-info"></button>
+                    </li>
+                    <li class="list-group-item">
+                        <button type="button" id="1" class="btn btn-info"></button>
+                    </li>
+                    <li class="list-group-item">
+                        <button type="button" id="2" class="btn btn-info"></button>
+                    </li>
+                    <li class="list-group-item">
+                        <button type="button" id="3" class="btn btn-info"></button>
+                    </li>
+                </ul>
+            </div>
+            <div id="right-answer" class="alert alert-success" role="alert">SUCCESS</div>
+            <div id="wrong-answer" class="alert alert-danger" role="alert">FAIL</div>
+            <div id="no-answer" class="alert alert-warning" role="alert">NO SELECT</div>
+            <div id="over" class="alert alert-info" role="alert">GAME OVER</div>
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
